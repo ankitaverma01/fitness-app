@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Page3</title>
+    <link rel="stylesheet" href="page3.css" />
+  </head>
+  <body>
+    <div class="center">
+      <div class="header">
+        <h1>What's your age?</h1>
+        <p>Your age determines how much you should consume.</p>
+      </div>
+      <form method="post">
+        <div class="container">            
+            <!-- adding button and heading to show the digits -->
+            <!--increment() and decrement() functions on button click-->
+                <button onclick="increment()">+</button>
+                <h2 id="counting"></h2>
+                <button onclick="decrement()">-</button>        
+            </div>
+     
+        <!-- <div class="textfield">
+          <input type="text" required />
+          <label>Enter your name</label>
+        </div>
+        <div class="textfield">
+          <input type="password" required />
+          <label>Password</label>
+        </div> -->
+        <!-- <div class="pass">Forgot Password?</div> -->
+        <input type="submit" value="Submit" />
+
+        <div class="signup" value="Login">
+            Fitness is not a destination. It is a way of life.
+          <!-- Not a member? <a href="signup.html">SignUp</a> -->
+        </div>
+      </form>
+    </div>
+    <script>
+        let data = 20;
+ 
+ //printing default value of data that is 0 in h2 tag
+ document.getElementById("counting").innerText = data;
+  
+ //creation of increment function
+ function increment() {
+     data = data + 1;
+     document.getElementById("counting").innerText = data;
+ }
+ //creation of decrement function
+ function decrement() {
+     data = data - 1;
+     document.getElementById("counting").innerText = data;
+ }
+    </script>
+  </body>
+</html>
